@@ -9,6 +9,7 @@
 #import "AppData.h"
 
 @implementation AppData
+
 @synthesize maAllExercises;
 @synthesize maAllExercisesImages;
 @synthesize maExercises;
@@ -16,6 +17,7 @@
 @synthesize idToken;
 @synthesize name;
 @synthesize email;
+@synthesize vc;
 
 
 static AppData *instance = nil;
@@ -30,9 +32,26 @@ static AppData *instance = nil;
             
             //Initialize code
             instance.maAllExercises = [[NSMutableArray alloc] initWithObjects:
-                                       @"Neck", @"Arms", nil];
+                                       @"Shoulder Stretch Front", @"Shoulder Stretch Back",
+                                       @"Shoulder Pull", @"Tricep and Shoulde Stretch",
+                                       @"Neck Stretch", @"Neck Flexion",
+                                       @"Knee to Chest", @"Chest Stretch",
+                                       @"Quadriceps Stretch", @"Hamstring Stretch",
+                                       @"Buttocks Stretch", @"Wrist/Forearm Stretch",
+                                       @"Biceps Stretch",
+                                       nil];
             instance.maAllExercisesImages = [[NSMutableArray alloc] initWithObjects:
-                                       @"img1.jpg", @"img2.jpg", nil];
+                                             @"img1.jpg", @"img2.jpg",
+                                             @"img1.jpg", @"img2.jpg",
+                                             @"img1.jpg", @"img2.jpg",
+                                             @"img1.jpg", @"img2.jpg",
+                                             @"img1.jpg", @"img2.jpg",
+                                             @"img1.jpg", @"img2.jpg",
+                                             @"img1.jpg",
+                                             nil];
+            if (instance.maExercises == nil) {
+                instance.maExercises = instance.maAllExercises;
+            }
         }
     }
     return instance;

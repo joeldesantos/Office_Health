@@ -7,6 +7,8 @@
 //
 
 #import "CalendarController.h"
+#import "AppData.h"
+#import "ExercisesController.h"
 
 static NSString *const kKeychainItemName = @"Google Calendar API";
 static NSString *const kClientID = @"638955651496-kd1amhktl4o526ku2k28cgdvovntfdve.apps.googleusercontent.com";
@@ -24,13 +26,16 @@ static NSString *const kClientSecret = @"Q8s5rucUq-LMhp3Eq6A6YXK8";
 // When the view loads, create necessary subviews, and initialize the Google Calendar API service.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [AppData getInstance].vc = self;
+
     
     // Create a UITextView to display output.
-    self.output = [[UITextView alloc] initWithFrame:self.view.bounds];
+//    self.output = [[UITextView alloc] initWithFrame:self.view.bounds];
+    self.output.text = @"";
     self.output.editable = false;
     self.output.contentInset = UIEdgeInsetsMake(20.0, 0.0, 20.0, 0.0);
-    self.output.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [self.view addSubview:self.output];
+//    self.output.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//    [self.view addSubview:self.output];
     
     // Initialize the Google Calendar API service & load existing credentials from the keychain if available.
     self.service = [[GTLServiceCalendar alloc] init];
@@ -132,4 +137,12 @@ static NSString *const kClientSecret = @"Q8s5rucUq-LMhp3Eq6A6YXK8";
     [alert show];
 }
 
+- (IBAction)menuBtn:(id)sender {
+    ExercisesController *detailsView = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ExercisesController"];
+    [self presentViewController:detailsView animated:YES completion:nil];
+}
+
+- (IBAction)addBtn:(id)sender {
+    [[GIDSignIn sharedInstance] signOut];
+}
 @end

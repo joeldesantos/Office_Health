@@ -28,6 +28,7 @@
 }
 
 - (void)initController {
+    [AppData getInstance].vc = self;
     [self playVideo];
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];

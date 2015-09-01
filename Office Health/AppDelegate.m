@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppData.h"
+#import "CalendarController.h"
 
 @interface AppDelegate ()
 
@@ -151,6 +152,8 @@ didSignInForUser:(GIDGoogleUser *)user
     appData.name = user.profile.name;
     appData.email = user.profile.email;
     // ...
+    CalendarController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"CalendarController"];
+    [[AppData getInstance].vc presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)signIn:(GIDSignIn *)signIn

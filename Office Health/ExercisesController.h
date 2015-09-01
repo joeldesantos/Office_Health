@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ExercisesController : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *eTbl;
+- (IBAction)menuBtn:(id)sender;
+- (IBAction)doneBtn:(id)sender;
 
 @end

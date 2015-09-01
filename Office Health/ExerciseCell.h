@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ExerciseCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *eNameLbl;
+@property (strong, nonatomic) IBOutlet UIImageView *eIconImg;
 
 @end
