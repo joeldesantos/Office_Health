@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A88FA0757E8D45EFD969DE /* libPods-Office Health.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD17765FA0D6B94BFDC7BBE /* libPods-Office Health.a */; };
 		6C52A5511B95356A007E081C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5501B95356A007E081C /* main.m */; };
 		6C52A5541B95356A007E081C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5531B95356A007E081C /* AppDelegate.m */; };
 		6C52A5571B95356A007E081C /* Office_Health.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5551B95356A007E081C /* Office_Health.xcdatamodeld */; };
@@ -26,6 +27,8 @@
 		6C52A5931B954A79007E081C /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5911B954A79007E081C /* ExerciseCell.xib */; };
 		6C52A5971B954B3B007E081C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C52A5951B954B3B007E081C /* AVFoundation.framework */; };
 		6C52A5981B954B3B007E081C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C52A5961B954B3B007E081C /* AVKit.framework */; };
+		6C52A5A31B95727C007E081C /* OfficeHealthIntro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5A21B95727C007E081C /* OfficeHealthIntro2.mp4 */; };
+		6C52A5A51B957932007E081C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5A41B957932007E081C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DD17765FA0D6B94BFDC7BBE /* libPods-Office Health.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Office Health.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6361C19CDA7EEFC7FB1340 /* Pods-Office Health.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Office Health.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Office Health/Pods-Office Health.debug.xcconfig"; sourceTree = "<group>"; };
 		6C52A54B1B95356A007E081C /* Office Health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Office Health.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C52A54F1B95356A007E081C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C52A5501B95356A007E081C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +76,9 @@
 		6C52A5911B954A79007E081C /* ExerciseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
 		6C52A5951B954B3B007E081C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6C52A5961B954B3B007E081C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		6C52A5A21B95727C007E081C /* OfficeHealthIntro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OfficeHealthIntro2.mp4; sourceTree = "<group>"; };
+		6C52A5A41B957932007E081C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9FAAD1BE907BF2F1E388DD9B /* Pods-Office Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Office Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Office Health/Pods-Office Health.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 			files = (
 				6C52A5971B954B3B007E081C /* AVFoundation.framework in Frameworks */,
 				6C52A5981B954B3B007E081C /* AVKit.framework in Frameworks */,
+				12A88FA0757E8D45EFD969DE /* libPods-Office Health.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58909F2BFA33107C1D805F69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD17765FA0D6B94BFDC7BBE /* libPods-Office Health.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6C52A5421B95356A007E081C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +118,8 @@
 				6C52A54D1B95356A007E081C /* Office Health */,
 				6C52A56A1B95356A007E081C /* Office HealthTests */,
 				6C52A54C1B95356A007E081C /* Products */,
+				E17E9338F3F092C34FF62D1C /* Pods */,
+				58909F2BFA33107C1D805F69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +150,7 @@
 		6C52A54E1B95356A007E081C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6C52A5A41B957932007E081C /* GoogleService-Info.plist */,
 				6C52A54F1B95356A007E081C /* Info.plist */,
 				6C52A5501B95356A007E081C /* main.m */,
 			);
@@ -181,6 +201,7 @@
 		6C52A57C1B9541D9007E081C /* Extras */ = {
 			isa = PBXGroup;
 			children = (
+				6C52A5A21B95727C007E081C /* OfficeHealthIntro2.mp4 */,
 				6C52A57D1B954258007E081C /* OfficeHealthIntro.mov */,
 			);
 			name = Extras;
@@ -211,6 +232,15 @@
 			name = Calendar;
 			sourceTree = "<group>";
 		};
+		E17E9338F3F092C34FF62D1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D6361C19CDA7EEFC7FB1340 /* Pods-Office Health.debug.xcconfig */,
+				9FAAD1BE907BF2F1E388DD9B /* Pods-Office Health.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C52A5711B95356A007E081C /* Build configuration list for PBXNativeTarget "Office Health" */;
 			buildPhases = (
+				F30B52D9F9079B71F4088DBE /* Check Pods Manifest.lock */,
 				6C52A5471B95356A007E081C /* Sources */,
 				6C52A5481B95356A007E081C /* Frameworks */,
 				6C52A5491B95356A007E081C /* Resources */,
+				4EB111D8939D0662007B5F08 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,10 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C52A55D1B95356A007E081C /* Main.storyboard in Resources */,
+				6C52A5A31B95727C007E081C /* OfficeHealthIntro2.mp4 in Resources */,
 				6C52A5621B95356A007E081C /* LaunchScreen.xib in Resources */,
 				6C52A5931B954A79007E081C /* ExerciseCell.xib in Resources */,
 				6C52A55F1B95356A007E081C /* Images.xcassets in Resources */,
 				6C52A57E1B954258007E081C /* OfficeHealthIntro.mov in Resources */,
+				6C52A5A51B957932007E081C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +341,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EB111D8939D0662007B5F08 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Office Health/Pods-Office Health-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30B52D9F9079B71F4088DBE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C52A5471B95356A007E081C /* Sources */ = {
@@ -447,6 +514,7 @@
 		};
 		6C52A5721B95356A007E081C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6361C19CDA7EEFC7FB1340 /* Pods-Office Health.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Office Health/Info.plist";
@@ -457,6 +525,7 @@
 		};
 		6C52A5731B95356A007E081C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAAD1BE907BF2F1E388DD9B /* Pods-Office Health.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Office Health/Info.plist";
@@ -518,6 +587,7 @@
 				6C52A5731B95356A007E081C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C52A5741B95356A007E081C /* Build configuration list for PBXNativeTarget "Office HealthTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +596,7 @@
 				6C52A5761B95356A007E081C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

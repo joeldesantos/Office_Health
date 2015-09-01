@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AppData : NSObject
+@interface AppData : NSObject {
+    
+    NSMutableArray  *maAllExercises;
+    NSMutableArray  *maAllExercisesImages;
+    NSMutableArray  *maExercises;
+    NSString        *userId;
+    NSString        *idToken;
+    NSString        *name;
+    NSString        *email;
+}
+
+@property(nonatomic,retain)NSMutableArray   *maAllExercises;
+@property(nonatomic,retain)NSMutableArray   *maAllExercisesImages;
+@property(nonatomic,retain)NSMutableArray   *maExercises;
+@property(nonatomic,retain)NSString         *userId;
+@property(nonatomic,retain)NSString         *idToken;
+@property(nonatomic,retain)NSString         *name;
+@property(nonatomic,retain)NSString         *email;
+
++(AppData*)getInstance;
+
 
 @end
