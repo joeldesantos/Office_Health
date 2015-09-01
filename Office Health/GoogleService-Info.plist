@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>TRACKING_ID</key>
+	<string>UA-65010825-3</string>
 	<key>CLIENT_ID</key>
 	<string>638955651496-5l27gsnf5vsuikjj5gtncd2f6r0qmtlh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
@@ -13,7 +15,7 @@
 	<key>IS_ADS_ENABLED</key>
 	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<true/>
 	<key>IS_APPINVITE_ENABLED</key>
 	<false/>
 	<key>IS_GCM_ENABLED</key>

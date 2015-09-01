@@ -7,6 +7,7 @@
 //
 
 #import "InitController.h"
+#import "AppData.h"
 @import AVFoundation;
 
 @interface InitController ()
@@ -31,6 +32,9 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     
     // TODO(developer) Configure the sign-in button look/feel
+    self.signInButton.style = kGIDSignInButtonStyleWide;
+//    self.signInButton.colorScheme = kGIDSignInButtonColorSchemeLight;
+    [self.signInButton setFrame:CGRectMake(8, 530, 358, 553)];
     
     [GIDSignIn sharedInstance].uiDelegate = self;
     
@@ -89,6 +93,17 @@
 #pragma mark - Action methods
 /**********************************************************************************************/
 
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    // Perform any operations on signed in user here.
+    AppData *appData = [AppData getInstance];
+    appData.userId = user.userID;                  // For client-side use only!
+    appData.idToken = user.authentication.idToken; // Safe to send to the server
+    appData.name = user.profile.name;
+    appData.email = user.profile.email;
+    // ...
+}
 
 
 @end
