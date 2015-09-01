@@ -29,6 +29,10 @@
 		6C52A5981B954B3B007E081C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C52A5961B954B3B007E081C /* AVKit.framework */; };
 		6C52A5A31B95727C007E081C /* OfficeHealthIntro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5A21B95727C007E081C /* OfficeHealthIntro2.mp4 */; };
 		6C52A5A71B958A96007E081C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5A61B958A96007E081C /* GoogleService-Info.plist */; };
+		6C52A5C71B95A6B9007E081C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C52A5C61B95A6B9007E081C /* Security.framework */; };
+		6C52A5C91B95A6C4007E081C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C52A5C81B95A6C4007E081C /* SystemConfiguration.framework */; };
+		6C52A5CB1B95A7A1007E081C /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5CA1B95A7A1007E081C /* GTMOAuth2ViewTouch.xib */; };
+		6C52A5CE1B95A7E2007E081C /* GTLCalendar_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5CC1B95A7E2007E081C /* GTLCalendar_Sources.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,12 @@
 		6C52A5961B954B3B007E081C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		6C52A5A21B95727C007E081C /* OfficeHealthIntro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OfficeHealthIntro2.mp4; sourceTree = "<group>"; };
 		6C52A5A61B958A96007E081C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6C52A5A81B95A676007E081C /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../google-api-objectivec-client/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
+		6C52A5C61B95A6B9007E081C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6C52A5C81B95A6C4007E081C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6C52A5CA1B95A7A1007E081C /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "../../google-api-objectivec-client/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
+		6C52A5CC1B95A7E2007E081C /* GTLCalendar_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLCalendar_Sources.m; path = "../../google-api-objectivec-client/Source/Services/Calendar/Generated/GTLCalendar_Sources.m"; sourceTree = "<group>"; };
+		6C52A5CD1B95A7E2007E081C /* GTLCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLCalendar.h; path = "../../google-api-objectivec-client/Source/Services/Calendar/Generated/GTLCalendar.h"; sourceTree = "<group>"; };
 		9FAAD1BE907BF2F1E388DD9B /* Pods-Office Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Office Health.release.xcconfig"; path = "Pods/Target Support Files/Pods-Office Health/Pods-Office Health.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C52A5C91B95A6C4007E081C /* SystemConfiguration.framework in Frameworks */,
+				6C52A5C71B95A6B9007E081C /* Security.framework in Frameworks */,
 				6C52A5971B954B3B007E081C /* AVFoundation.framework in Frameworks */,
 				6C52A5981B954B3B007E081C /* AVKit.framework in Frameworks */,
 				12A88FA0757E8D45EFD969DE /* libPods-Office Health.a in Frameworks */,
@@ -105,6 +117,8 @@
 		58909F2BFA33107C1D805F69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C52A5C81B95A6C4007E081C /* SystemConfiguration.framework */,
+				6C52A5C61B95A6B9007E081C /* Security.framework */,
 				2DD17765FA0D6B94BFDC7BBE /* libPods-Office Health.a */,
 			);
 			name = Frameworks;
@@ -113,8 +127,7 @@
 		6C52A5421B95356A007E081C = {
 			isa = PBXGroup;
 			children = (
-				6C52A5951B954B3B007E081C /* AVFoundation.framework */,
-				6C52A5961B954B3B007E081C /* AVKit.framework */,
+				6C52A5CF1B95A806007E081C /* Frameworks */,
 				6C52A54D1B95356A007E081C /* Office Health */,
 				6C52A56A1B95356A007E081C /* Office HealthTests */,
 				6C52A54C1B95356A007E081C /* Products */,
@@ -150,6 +163,7 @@
 		6C52A54E1B95356A007E081C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6C52A5CA1B95A7A1007E081C /* GTMOAuth2ViewTouch.xib */,
 				6C52A5A61B958A96007E081C /* GoogleService-Info.plist */,
 				6C52A54F1B95356A007E081C /* Info.plist */,
 				6C52A5501B95356A007E081C /* main.m */,
@@ -224,12 +238,24 @@
 		6C52A5941B954A94007E081C /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				6C52A5CC1B95A7E2007E081C /* GTLCalendar_Sources.m */,
+				6C52A5CD1B95A7E2007E081C /* GTLCalendar.h */,
 				6C52A5881B9549F9007E081C /* CalendarController.h */,
 				6C52A5891B9549F9007E081C /* CalendarController.m */,
 				6C52A58B1B954A16007E081C /* CalendarEditController.h */,
 				6C52A58C1B954A16007E081C /* CalendarEditController.m */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		6C52A5CF1B95A806007E081C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C52A5A81B95A676007E081C /* GTL.xcodeproj */,
+				6C52A5951B954B3B007E081C /* AVFoundation.framework */,
+				6C52A5961B954B3B007E081C /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E17E9338F3F092C34FF62D1C /* Pods */ = {
@@ -323,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C52A5CB1B95A7A1007E081C /* GTMOAuth2ViewTouch.xib in Resources */,
 				6C52A55D1B95356A007E081C /* Main.storyboard in Resources */,
 				6C52A5A31B95727C007E081C /* OfficeHealthIntro2.mp4 in Resources */,
 				6C52A5621B95356A007E081C /* LaunchScreen.xib in Resources */,
@@ -384,6 +411,7 @@
 				6C52A5871B9549CC007E081C /* ExercisesEditController.m in Sources */,
 				6C52A5541B95356A007E081C /* AppDelegate.m in Sources */,
 				6C52A5921B954A79007E081C /* ExerciseCell.m in Sources */,
+				6C52A5CE1B95A7E2007E081C /* GTLCalendar_Sources.m in Sources */,
 				6C52A58A1B9549F9007E081C /* CalendarController.m in Sources */,
 				6C52A55A1B95356A007E081C /* InitController.m in Sources */,
 				6C52A5511B95356A007E081C /* main.m in Sources */,
@@ -519,7 +547,56 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Office Health/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GGLAnalytics\"",
+					"-l\"GGLCore\"",
+					"-l\"GGLSignIn\"",
+					"-l\"GIDExShared\"",
+					"-l\"GSDK_Overload\"",
+					"-l\"GTMOAuth2_external\"",
+					"-l\"GTMOAuth2_internal\"",
+					"-l\"GTMSessionFetcher_core\"",
+					"-l\"GTMSessionFetcher_full\"",
+					"-l\"GTMStackTrace\"",
+					"-l\"GTM_AddressBook\"",
+					"-l\"GTM_DebugUtils\"",
+					"-l\"GTM_GTMURLBuilder\"",
+					"-l\"GTM_KVO\"",
+					"-l\"GTM_NSDictionary+URLArguments\"",
+					"-l\"GTM_NSScannerJSON\"",
+					"-l\"GTM_NSStringHTML\"",
+					"-l\"GTM_NSStringXML\"",
+					"-l\"GTM_Regex\"",
+					"-l\"GTM_RoundedRectPath\"",
+					"-l\"GTM_StringEncoding\"",
+					"-l\"GTM_SystemVersion\"",
+					"-l\"GTM_UIFont+LineHeight\"",
+					"-l\"GTM_core\"",
+					"-l\"GTM_iPhone\"",
+					"-l\"GoogleAnalytics\"",
+					"-l\"OpenInChrome\"",
+					"-l\"SignIn\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"/Users/Aleyr/Documents/Office Health/google-api-objectivec-client/Source\"/**";
 			};
 			name = Debug;
 		};
@@ -530,7 +607,56 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Office Health/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GGLAnalytics\"",
+					"-l\"GGLCore\"",
+					"-l\"GGLSignIn\"",
+					"-l\"GIDExShared\"",
+					"-l\"GSDK_Overload\"",
+					"-l\"GTMOAuth2_external\"",
+					"-l\"GTMOAuth2_internal\"",
+					"-l\"GTMSessionFetcher_core\"",
+					"-l\"GTMSessionFetcher_full\"",
+					"-l\"GTMStackTrace\"",
+					"-l\"GTM_AddressBook\"",
+					"-l\"GTM_DebugUtils\"",
+					"-l\"GTM_GTMURLBuilder\"",
+					"-l\"GTM_KVO\"",
+					"-l\"GTM_NSDictionary+URLArguments\"",
+					"-l\"GTM_NSScannerJSON\"",
+					"-l\"GTM_NSStringHTML\"",
+					"-l\"GTM_NSStringXML\"",
+					"-l\"GTM_Regex\"",
+					"-l\"GTM_RoundedRectPath\"",
+					"-l\"GTM_StringEncoding\"",
+					"-l\"GTM_SystemVersion\"",
+					"-l\"GTM_UIFont+LineHeight\"",
+					"-l\"GTM_core\"",
+					"-l\"GTM_iPhone\"",
+					"-l\"GoogleAnalytics\"",
+					"-l\"OpenInChrome\"",
+					"-l\"SignIn\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"/Users/Aleyr/Documents/Office Health/google-api-objectivec-client/Source\"/**";
 			};
 			name = Release;
 		};

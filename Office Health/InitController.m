@@ -8,6 +8,7 @@
 
 #import "InitController.h"
 #import "AppData.h"
+#import "CalendarController.h"
 @import AVFoundation;
 
 @interface InitController ()
@@ -103,6 +104,8 @@ didSignInForUser:(GIDGoogleUser *)user
     appData.name = user.profile.name;
     appData.email = user.profile.email;
     // ...
+    CalendarController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"CalendarController"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 
