@@ -10,11 +10,22 @@
 		6C52A5511B95356A007E081C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5501B95356A007E081C /* main.m */; };
 		6C52A5541B95356A007E081C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5531B95356A007E081C /* AppDelegate.m */; };
 		6C52A5571B95356A007E081C /* Office_Health.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5551B95356A007E081C /* Office_Health.xcdatamodeld */; };
-		6C52A55A1B95356A007E081C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5591B95356A007E081C /* ViewController.m */; };
+		6C52A55A1B95356A007E081C /* InitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5591B95356A007E081C /* InitController.m */; };
 		6C52A55D1B95356A007E081C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A55B1B95356A007E081C /* Main.storyboard */; };
 		6C52A55F1B95356A007E081C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A55E1B95356A007E081C /* Images.xcassets */; };
 		6C52A5621B95356A007E081C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5601B95356A007E081C /* LaunchScreen.xib */; };
 		6C52A56E1B95356A007E081C /* Office_HealthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A56D1B95356A007E081C /* Office_HealthTests.m */; };
+		6C52A57B1B953CD1007E081C /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A57A1B953CD1007E081C /* AppData.m */; };
+		6C52A57E1B954258007E081C /* OfficeHealthIntro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A57D1B954258007E081C /* OfficeHealthIntro.mov */; };
+		6C52A5811B954987007E081C /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5801B954987007E081C /* HomeController.m */; };
+		6C52A5841B9549AB007E081C /* ExercisesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5831B9549AB007E081C /* ExercisesController.m */; };
+		6C52A5871B9549CC007E081C /* ExercisesEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5861B9549CC007E081C /* ExercisesEditController.m */; };
+		6C52A58A1B9549F9007E081C /* CalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5891B9549F9007E081C /* CalendarController.m */; };
+		6C52A58D1B954A16007E081C /* CalendarEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A58C1B954A16007E081C /* CalendarEditController.m */; };
+		6C52A5921B954A79007E081C /* ExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52A5901B954A79007E081C /* ExerciseCell.m */; };
+		6C52A5931B954A79007E081C /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C52A5911B954A79007E081C /* ExerciseCell.xib */; };
+		6C52A5971B954B3B007E081C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C52A5951B954B3B007E081C /* AVFoundation.framework */; };
+		6C52A5981B954B3B007E081C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C52A5961B954B3B007E081C /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +45,32 @@
 		6C52A5521B95356A007E081C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C52A5531B95356A007E081C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6C52A5561B95356A007E081C /* Office_Health.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Office_Health.xcdatamodel; sourceTree = "<group>"; };
-		6C52A5581B95356A007E081C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6C52A5591B95356A007E081C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6C52A5581B95356A007E081C /* InitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitController.h; sourceTree = "<group>"; };
+		6C52A5591B95356A007E081C /* InitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitController.m; sourceTree = "<group>"; };
 		6C52A55C1B95356A007E081C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C52A55E1B95356A007E081C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6C52A5611B95356A007E081C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6C52A5671B95356A007E081C /* Office HealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Office HealthTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C52A56C1B95356A007E081C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C52A56D1B95356A007E081C /* Office_HealthTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Office_HealthTests.m; sourceTree = "<group>"; };
+		6C52A5791B953CD1007E081C /* AppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
+		6C52A57A1B953CD1007E081C /* AppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppData.m; sourceTree = "<group>"; };
+		6C52A57D1B954258007E081C /* OfficeHealthIntro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = OfficeHealthIntro.mov; sourceTree = "<group>"; };
+		6C52A57F1B954987007E081C /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		6C52A5801B954987007E081C /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		6C52A5821B9549AB007E081C /* ExercisesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesController.h; sourceTree = "<group>"; };
+		6C52A5831B9549AB007E081C /* ExercisesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesController.m; sourceTree = "<group>"; };
+		6C52A5851B9549CC007E081C /* ExercisesEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExercisesEditController.h; sourceTree = "<group>"; };
+		6C52A5861B9549CC007E081C /* ExercisesEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExercisesEditController.m; sourceTree = "<group>"; };
+		6C52A5881B9549F9007E081C /* CalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarController.h; sourceTree = "<group>"; };
+		6C52A5891B9549F9007E081C /* CalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarController.m; sourceTree = "<group>"; };
+		6C52A58B1B954A16007E081C /* CalendarEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarEditController.h; sourceTree = "<group>"; };
+		6C52A58C1B954A16007E081C /* CalendarEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarEditController.m; sourceTree = "<group>"; };
+		6C52A58F1B954A79007E081C /* ExerciseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseCell.h; sourceTree = "<group>"; };
+		6C52A5901B954A79007E081C /* ExerciseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseCell.m; sourceTree = "<group>"; };
+		6C52A5911B954A79007E081C /* ExerciseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		6C52A5951B954B3B007E081C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6C52A5961B954B3B007E081C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C52A5971B954B3B007E081C /* AVFoundation.framework in Frameworks */,
+				6C52A5981B954B3B007E081C /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +96,8 @@
 		6C52A5421B95356A007E081C = {
 			isa = PBXGroup;
 			children = (
+				6C52A5951B954B3B007E081C /* AVFoundation.framework */,
+				6C52A5961B954B3B007E081C /* AVKit.framework */,
 				6C52A54D1B95356A007E081C /* Office Health */,
 				6C52A56A1B95356A007E081C /* Office HealthTests */,
 				6C52A54C1B95356A007E081C /* Products */,
@@ -83,10 +116,9 @@
 		6C52A54D1B95356A007E081C /* Office Health */ = {
 			isa = PBXGroup;
 			children = (
-				6C52A5521B95356A007E081C /* AppDelegate.h */,
-				6C52A5531B95356A007E081C /* AppDelegate.m */,
-				6C52A5581B95356A007E081C /* ViewController.h */,
-				6C52A5591B95356A007E081C /* ViewController.m */,
+				6C52A57C1B9541D9007E081C /* Extras */,
+				6C52A5781B953C28007E081C /* Delegates */,
+				6C52A5771B953C16007E081C /* Controllers */,
 				6C52A55B1B95356A007E081C /* Main.storyboard */,
 				6C52A55E1B95356A007E081C /* Images.xcassets */,
 				6C52A5601B95356A007E081C /* LaunchScreen.xib */,
@@ -120,6 +152,63 @@
 				6C52A56C1B95356A007E081C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C52A5771B953C16007E081C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C52A5581B95356A007E081C /* InitController.h */,
+				6C52A5591B95356A007E081C /* InitController.m */,
+				6C52A57F1B954987007E081C /* HomeController.h */,
+				6C52A5801B954987007E081C /* HomeController.m */,
+				6C52A5941B954A94007E081C /* Calendar */,
+				6C52A58E1B954A23007E081C /* Exercises */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6C52A5781B953C28007E081C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6C52A5521B95356A007E081C /* AppDelegate.h */,
+				6C52A5531B95356A007E081C /* AppDelegate.m */,
+				6C52A5791B953CD1007E081C /* AppData.h */,
+				6C52A57A1B953CD1007E081C /* AppData.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		6C52A57C1B9541D9007E081C /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				6C52A57D1B954258007E081C /* OfficeHealthIntro.mov */,
+			);
+			name = Extras;
+			sourceTree = "<group>";
+		};
+		6C52A58E1B954A23007E081C /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				6C52A5821B9549AB007E081C /* ExercisesController.h */,
+				6C52A5831B9549AB007E081C /* ExercisesController.m */,
+				6C52A5851B9549CC007E081C /* ExercisesEditController.h */,
+				6C52A5861B9549CC007E081C /* ExercisesEditController.m */,
+				6C52A58F1B954A79007E081C /* ExerciseCell.h */,
+				6C52A5901B954A79007E081C /* ExerciseCell.m */,
+				6C52A5911B954A79007E081C /* ExerciseCell.xib */,
+			);
+			name = Exercises;
+			sourceTree = "<group>";
+		};
+		6C52A5941B954A94007E081C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				6C52A5881B9549F9007E081C /* CalendarController.h */,
+				6C52A5891B9549F9007E081C /* CalendarController.m */,
+				6C52A58B1B954A16007E081C /* CalendarEditController.h */,
+				6C52A58C1B954A16007E081C /* CalendarEditController.m */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +293,9 @@
 			files = (
 				6C52A55D1B95356A007E081C /* Main.storyboard in Resources */,
 				6C52A5621B95356A007E081C /* LaunchScreen.xib in Resources */,
+				6C52A5931B954A79007E081C /* ExerciseCell.xib in Resources */,
 				6C52A55F1B95356A007E081C /* Images.xcassets in Resources */,
+				6C52A57E1B954258007E081C /* OfficeHealthIntro.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +314,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C52A5571B95356A007E081C /* Office_Health.xcdatamodeld in Sources */,
+				6C52A5871B9549CC007E081C /* ExercisesEditController.m in Sources */,
 				6C52A5541B95356A007E081C /* AppDelegate.m in Sources */,
-				6C52A55A1B95356A007E081C /* ViewController.m in Sources */,
+				6C52A5921B954A79007E081C /* ExerciseCell.m in Sources */,
+				6C52A58A1B9549F9007E081C /* CalendarController.m in Sources */,
+				6C52A55A1B95356A007E081C /* InitController.m in Sources */,
 				6C52A5511B95356A007E081C /* main.m in Sources */,
+				6C52A5811B954987007E081C /* HomeController.m in Sources */,
+				6C52A58D1B954A16007E081C /* CalendarEditController.m in Sources */,
+				6C52A5841B9549AB007E081C /* ExercisesController.m in Sources */,
+				6C52A57B1B953CD1007E081C /* AppData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
