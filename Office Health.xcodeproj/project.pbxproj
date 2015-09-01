@@ -82,7 +82,6 @@
 		6C52A5961B954B3B007E081C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		6C52A5A21B95727C007E081C /* OfficeHealthIntro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OfficeHealthIntro2.mp4; sourceTree = "<group>"; };
 		6C52A5A61B958A96007E081C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6C52A5A81B95A676007E081C /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../google-api-objectivec-client/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
 		6C52A5C61B95A6B9007E081C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6C52A5C81B95A6C4007E081C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6C52A5CA1B95A7A1007E081C /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "../../google-api-objectivec-client/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
@@ -251,7 +250,6 @@
 		6C52A5CF1B95A806007E081C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6C52A5A81B95A676007E081C /* GTL.xcodeproj */,
 				6C52A5951B954B3B007E081C /* AVFoundation.framework */,
 				6C52A5961B954B3B007E081C /* AVKit.framework */,
 			);
@@ -547,6 +545,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Office Health/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
